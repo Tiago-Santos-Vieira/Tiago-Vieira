@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-black: #050508;
+  --color-black-light: #0a0a10;
+  --color-black-lighter: #12121a;
+  --color-purple: #8b5cf6;
+  --color-purple-glow: rgba(139, 92, 246, 0.5);
+  --color-blue: #3b82f6;
+  --color-blue-glow: rgba(59, 130, 246, 0.5);
+}
+
+body {
+  background-color: var(--color-black);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-purple), var(--color-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px var(--color-purple-glow);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px var(--color-blue-glow);
+}
+
+.code-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.03;
+  pointer-events: none;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-purple);
+  white-space: pre;
+}
