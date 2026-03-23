@@ -437,9 +437,8 @@ export default function App() {
             &copy; {new Date().getFullYear()} Tiago Vieira. Todos os direitos reservados.
           </div>
           <div className="flex items-center gap-4 text-sm text-white/40">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Twitter</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+            <a href="https://instagram.com/tiagovieira.films" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@tiagovieira.films</a>
+            <a href="https://wa.me/5573981579948" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp</a>
           </div>
         </motion.div>
       </footer>
